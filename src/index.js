@@ -1,4 +1,4 @@
-function toReadable (number) {
+module.exports = function toReadable (number) {
     let numUpToNine = ['', 'one', 'two', 'three', 'four', 'five', 'six', 
     'seven', 'eight', 'nine'];
     let numUpToNineteen = ['', 'one', 'two', 'three', 'four', 'five', 'six', 
