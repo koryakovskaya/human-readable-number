@@ -10,7 +10,7 @@ function toReadable (number) {
         let transNumber = number % (100 * Math.pow(1000, i));
         if (Math.floor(transNumber /(Math.pow(1000, i))) !== 0) {
             if (Math.floor(transNumber /(Math.pow(1000, i))) < 20) {
-                numInWords = one[Math.floor(transNumber /(Math.pow(1000, i)))] + great[i] + numInWords;
+                numInWords = one[Math.floor(transNumber /(Math.pow(1000, i)))] + ' ' + great[i] + numInWords;
             } else {
                 numInWords = tens[Math.floor(transNumber /(10 * Math.pow(1000, i)))] +   
                 one[Math.floor(transNumber /(Math.pow(1000, i))) % 10] + ' ' + great[i] + numInWords;
@@ -25,3 +25,7 @@ function toReadable (number) {
 
     return numInWords;
 }
+
+
+
+
